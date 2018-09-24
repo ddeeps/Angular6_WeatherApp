@@ -7,11 +7,6 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'This is simply a test', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdcYEKGIgkO7wnX_k1tbsAaYEiA6BvcD3zPAoBo8csaW8EAopR'),
-    new Recipe('Another Test Recipe', 'This is simply a test', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdcYEKGIgkO7wnX_k1tbsAaYEiA6BvcD3zPAoBo8csaW8EAopR')
-  ];
-
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
 
   constructor() { }
